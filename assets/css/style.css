@@ -1,0 +1,435 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#inicio {
+    /*background-image: var(--gradient);*/
+    background-image: url("../images/predio.jpg");
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgb(250, 239, 239);
+}
+
+@keyframes pisca {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.inicio-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(290deg, rgba(255, 0, 0, 0) 50%, rgb(44, 37, 140) 33%);
+}
+
+.jmrh-nome{
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-size: 65px;
+    opacity: 0;
+    display: block;
+}
+
+.jmrh-nome::after{
+    content: '|';
+    font-size: 80px;
+    opacity: 1;
+    animation: pisca 1.3s infinite;
+}
+.subtitulo{
+  margin-top: 4px;
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
+.subtitulo h2{
+  font-size: 25px;
+}
+
+
+.descricao{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50vw;
+}
+
+.inicio-container h1, h2{
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+
+
+/* BOTÃO */
+
+.btn{
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  width: 230px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  background-size: 230%;
+  transition: 0.5s;
+  background-image: linear-gradient(to left, #00E7F0, rgba(0, 109, 240, 1));
+}
+
+.btn:hover{
+  scale: 1.01;
+  background-position: right;
+}
+/* SERVIÇOS*/ 
+
+.serviços{
+  background-color: #ffffff;
+}
+
+.serviços h1{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  margin-left: 13%;
+  margin-right: 13%;
+  font-family: 'Reem Kufi Ink', sans-serif;
+  color: rgb(44, 37, 140);
+  font-size: calc(10px + 2.5vw);
+  letter-spacing: 4px;
+  border-bottom: 2px solid #ccc;
+}
+
+#jmrh{
+  letter-spacing: 2px;
+}
+
+.serviços-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: calc(5px + 1vw);
+     margin-left: 12%;
+     margin-right: 12%;
+     margin-bottom: 6%;
+     margin-top: 3.5%;
+     text-align: center;
+ }
+
+ .serviço{
+       background-color: white;
+       background-image: white;
+       box-shadow: 0 0 16px rgba(0,0,0,200);
+       border-radius: 4px;
+       padding: 4%;
+       margin: 2%;
+       flex-grow: 1;
+       text-align: center;
+       color: rgb(44, 37, 140);
+       transition-duration: 1s;
+  }
+
+ .serviço img{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 100%;
+       height: 10vw;
+       object-fit: cover;
+       border-radius: 4px;
+  }
+
+ .serviço h2{
+       font-size: calc(10px + 1.5vw);
+       font-family: 'Reem Kufi Ink', sans-serif;
+       font-weight: bold;
+  }
+
+ .serviço p{
+      font-size: calc(5px + 0.7vw);
+      font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+      font-weight: bold;
+ }
+
+
+.serviço:hover{
+  color: inherit;
+  text-decoration: none;
+  /*transform: scale(1.05);*/
+   transition-duration: 1.5s;
+   box-shadow: 0 0 125px #193094;
+   color: white;
+   background-color: rgb(44, 37, 140);
+}
+
+img.img-scale{
+   background-size: cover;
+   background-position: center;
+   max-width:calc(50px + 14vw);
+    max-height:calc(25px + 7vw);
+    width: auto;
+    height: auto;
+   }
+
+/**/
+.contatos{
+  background-color: rgb(44, 37, 140);
+  padding-top: 1px;
+}
+
+
+.contatos h1{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  margin-left: 13%;
+  margin-right: 13%;
+  font-family: 'Reem Kufi Ink', sans-serif;
+  color: white;
+  font-size: calc(10px + 2.5vw);
+  letter-spacing: 4px;
+  border-bottom: 2px solid #ccc;
+}
+
+.contatos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: calc(5px + 1vw);
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 3.5%;
+  text-align: center;
+  padding-bottom: 3.5%;
+}
+
+.contato-card{
+  background-color: rgb(44, 37, 140);
+  background-image: rgb(44, 37, 140);
+  box-shadow: 0 0 16px #00E7F0;
+  border-radius: 4px;
+  padding: 4%;
+  margin: 2%;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+  transition-duration: 1s;
+}
+
+.contato-card img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 10vw;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.contato-card h2{
+  font-size: calc(10px + 1.5vw);
+  font-family: 'Reem Kufi Ink', sans-serif;
+  font-weight: bold;
+}
+
+.contato-card p{
+ font-size: calc(5px + 0.7vw);
+ font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+ font-weight: bold;
+}
+
+
+.contato-card:hover{
+color: inherit;
+text-decoration: none;
+transition-duration: 1.5s;
+box-shadow: 0 0 125px #00E7F0;
+color: rgb(44, 37, 140);
+background-color: white;
+}
+
+img.img-scale{
+background-size: cover;
+background-position: center;
+max-width:calc(40px + 12vw);
+max-height:calc(20px + 6vw);
+width: auto;
+height: auto;
+}
+
+/* FOOTER*/
+
+#rodape {
+  font-family: 'Reem Kufi Ink', sans-serif;
+  background-image: linear-gradient(to bottom, #313177, #282858, #2b2b4b, #30304b);
+  width: 100%;
+  padding: 20px 0;
+  border-top: 3px solid #282858;
+  color: white;
+  list-style: none
+}
+#rodape, #rodape-conteudo{
+  visibility: visible !important;
+  opacity: 1 !important;
+  /* position: static !important; */
+}
+
+.desc{
+  font-size: calc(9px + 0.7vw);
+}
+
+.guide{
+  display: flex;
+  justify-content:space-evenly;
+}
+.guide-rodape {
+  border-top: 0px solid;
+}
+.guide-geral {
+  position: relative;
+}
+
+.list{
+  margin: 1vw;
+  font-size: calc(9px + 0.4vw);
+}
+
+.list li{
+  margin: calc(6px + 0.4vw);
+}
+
+.icon{
+  margin-right: 7px;
+}
+
+
+
+/* criando barra de navegação */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Reem Kufi Ink', sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #282858;
+    height: 8vh;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+/* barra de navegação terminada */
+
+@media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    #inicio{
+      height: 75vw;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #282858;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      z-index: 10;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
