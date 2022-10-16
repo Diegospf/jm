@@ -381,7 +381,7 @@ height: auto;
       overflow-x: hidden;
     }
     #inicio{
-      height: 75vw;
+      height: 70vw;
     }
     .nav-list {
       position: absolute;
@@ -404,7 +404,33 @@ height: auto;
     .mobile-menu {
       display: block;
     }
+    /*INICIO*/
+
+    .jmrh-nome{
+      font-size: calc(20px + 0.7vw);
+    }
+
+    .jmrh-nome::after{
+      font-size: calc(25px + 0.7vw);
+    }
+
+    .subtitulo h2{
+      font-size: calc(9px + 0.7vw);
+    }
+
+    .inicio-container h1, h2{
+      font-size: calc(9px + 0.7vw);
+    }
+
+    .btn{
+      margin-top: 10px;
+      font-size: calc(7px + 0.7vw);
+      padding: 10px;
+      width: calc(110px + 8vw);
+      border-radius: 5px;
+    }
   }
+
   
   .nav-list.active {
     transform: translateX(0);
