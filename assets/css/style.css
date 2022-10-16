@@ -422,6 +422,10 @@ height: auto;
       font-size: calc(9px + 0.7vw);
     }
 
+    .descricao{
+      margin: 10px;
+  }
+
     .btn{
       margin-top: 10px;
       font-size: calc(7px + 0.7vw);
