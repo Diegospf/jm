@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>JMRH</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -25,10 +21,10 @@
       </div>
       <ul class="nav-list">
         <li><a href="#inicio">Início</a></li>
-        <li><a href="templates/sobre.html">Sobre</a></li>
+        <li><a href="#sobre-id">Sobre</a></li>
         <li><a href="#serviços-id">Serviços</a></li>
-        <li><a href="#">Minha Conta</a></li>
         <li><a href="templates/contato.html">Contato</a></li>
+        <li><a href="#">Minha Conta</a></li>
       </ul>
     </nav>
   </header>
@@ -51,53 +47,52 @@
           </div>
       </div>
   </section>
-  <!--sobre-->
+  <!--serviços-->
   <section class="serviços" id="serviços-id">
 		<h1>Serviços</h1>
 		<div class="serviços-container">
-      <a class="serviço" href="templates/consultas.html">
+      <div class="serviço">
 				<img class="img-scale" src="assets/images/consulta-online.png" alt="Imagem de uma pesquisa">
 				<h2>Consultas</h2>
 				<p>A JMRH tem a responsabilidade de apresentar o que há de mais completo em pesquisas com a melhor tecnologia existente no mercado, de forma rápida de segura.</p>
-			</a>
-			<a class="serviço" href="templates/pesquisa-nacional.html">
+			</div>
+			<div class="serviço">
 				<img class="img-scale" src="assets/images/brasil.png" alt="Imagem do território do Brasil">
 				<h2>Nacional</h2>
 				<p>Pesquisas em todo território Brasileiro. Trabalhamos com quadro de profissionais qualificados em pesquisas cadastrais mais completas do mercado.</p>
-			</a>
-			<a class="serviço" href="templates/entrega-rapida.html">
+			</div>
+			<div class="serviço">
 				<img class="img-scale" src="assets/images/tempo-rapido.png" alt="Imagem de um relógio">
 				<h2>Velocidade</h2>
 				<p>A JMRH tem um atendimento diferenciado como compromisso e oferece o menor preço e prazo.</p>
-			</a>
-			<a class="serviço" href="templates/segurança.html">
+			</div>
+			<div class="serviço">
 				<img class="img-scale" src="assets/images/proteger.png" alt="Imagem de um escudo">
 				<h2>Segurança</h2>
 				<p>A JMRH oferece informações profissionais e sociais para auxiliar na seleção e admissão de funcionários.</p>
-			</a>
+			</div>
 		</div>
 	</section>
-   <!-- Conhecimentos -->
-   <section class="contatos" id="contato-id">
-		<h1>Contato</h1>
-    <div class="contatos-container">
-      <a class="contato-card" href="templates/contato.html">
-				<img class="img-scale" src="assets/images/ligar.png" alt="Imagem de uma pesquisa">
+   <!--sobre -->
+   <section class="sobre" id="sobre-id">
+		<h1>Sobre</h1>
+    <div class="sobre-container">
+      <a class="sobre-card" href="templates/contato.html">
+				<img class="img-scale" src="assets/images/ligar.png" alt="Imagem de um telefone e carta">
 				<h2>Contato</h2>
 				<p>Entre em contato com a JMRH e tenha a melhor experiência de consultoria.</p>
 			</a>
-			<a class="contato-card" href="templates/sobre.html">
-				<img class="img-scale" src="assets/images/sobre.png" alt="Imagem do território do Brasil">
+			<div class="sobre-card">
+				<img class="img-scale" src="assets/images/sobre.png" alt="Imagem de informação">
 				<h2>Sobre a JMRH</h2>
-				<p>Saiba um pouco da nossa história com mais de 30 anos no mercado.</p>
-			</a>
-			<a class="contato-card" href="templates/falam-sobre.html">
-				<img class="img-scale" src="assets/images/balao-de-fala.png" alt="Imagem de um relógio">
-				<h2>O que falam?</h2>
-				<p>Veja o que os clientes falam sobre a JMRH</p>
-			</a>
+				<p>Somos uma empresa especializada em Prestação de Serviços na área de Recursos Humanos há 33 anos.</p>
+			</div>
+			<div class="sobre-card">
+				<img class="img-scale" src="assets/images/aperto-de-mao.png" alt="Imagem de um aperto de mão">
+				<h2>Parceiros</h2>
+				<p>Venha fazer parte dos mais de 1200 clientes parceiros da JMRH.</p>
+			</div>
 		</div>
-		
 	</section>
   </main>
  <footer>
@@ -125,7 +120,7 @@
             <span class="desc">Institucional</span>
             <div class="list">
               <li>
-                  <a href="templates/sobre.html">JMRH</a>
+                  <a href="/">JMRH</a>
               </li>
               <li>
                   <a href="#serviços-id">Serviços</a>
