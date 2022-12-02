@@ -9,10 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/jm-icon.ico">
 </head>
 <body>
   <header>
-    <nav>
+    <nav id="navbar">
       <a class="logo" href="/">JMRH</a>
       <div class="mobile-menu">
         <div class="line1"></div>
@@ -23,7 +24,7 @@
         <li><a href="#inicio">Início</a></li>
         <li><a href="#sobre-id">Sobre</a></li>
         <li><a href="#serviços-id">Serviços</a></li>
-        <li><a href="templates/contato.html">Contato</a></li>
+        <li><a href="#">Contato</a></li>
         <li><a href="#">Minha Conta</a></li>
       </ul>
     </nav>
@@ -40,7 +41,7 @@
                     <h2>Assessoria de informações</h2>
                   </div>
               </h1>
-              <a href="templates/contato.html">
+              <a href="#">
                 <button class="btn"><span>Consulte por CPF ou CNPJ</span></button> 
               </a>
             </div>
@@ -77,11 +78,11 @@
    <section class="sobre" id="sobre-id">
 		<h1>Sobre</h1>
     <div class="sobre-container">
-      <a class="sobre-card" href="templates/contato.html">
+      <div class="sobre-card">
 				<img class="img-scale" src="assets/images/ligar.png" alt="Imagem de um telefone e carta">
 				<h2>Contato</h2>
 				<p>Entre em contato com a JMRH e tenha a melhor experiência de consultoria.</p>
-			</a>
+			</div>
 			<div class="sobre-card">
 				<img class="img-scale" src="assets/images/sobre.png" alt="Imagem de informação">
 				<h2>Sobre a JMRH</h2>
@@ -120,13 +121,13 @@
             <span class="desc">Institucional</span>
             <div class="list">
               <li>
-                  <a href="/">JMRH</a>
+                  <a href="#navbar">JMRH</a>
               </li>
               <li>
                   <a href="#serviços-id">Serviços</a>
               </li>
               <li>
-                  <a href="templates/contato.html">Contato</a>
+                  <a href="#">Contato</a>
               </li>
             </div>
           </div>
